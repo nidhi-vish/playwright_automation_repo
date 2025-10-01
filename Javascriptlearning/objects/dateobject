@@ -1,0 +1,12 @@
+let d = new Date();
+console.log(d)
+
+console.log(d.getDate());             // to get date   1--31
+console.log(d.getMonth()+1);            // 0-11 [January considers as 1, so we do plus 1]
+console.log(d.getFullYear());         // retuns the current year
+
+console.log("Today's date is "+ d.getDate()+ "/"+d.getMonth()+1+"/"+d.getFullYear());
+
+console.log(d.getHours());            // To get hours   0--23
+console.log(d.getMinutes());          // To get minutes 0---59
+console.log(d.getSeconds());          // To get seconds 0--59

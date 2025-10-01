@@ -1,0 +1,37 @@
+//Example 1
+function add(a,b)
+{
+    console.log(a+b);
+}
+
+add(20,30);                               //calling add funtion
+
+
+//EXAMPLE2
+function sub(x,y)
+{
+    return(x-y);
+}
+
+let result = sub(40,21);                   //calling function which returns some value
+console.log(result);
+
+
+// EXAMPLE3 
+function mul()
+{
+    console.log("multiplication");
+}
+
+mul()                            // Calling function with no parameters
+
+
+// EXAMPLE4
+function div()
+{
+    return('Division');
+}
+
+console.log(div());                   // Calling function with no paramete with return value. empty braces is must
+let msg = div();                      // Another way of clling. 
+console.log(msg);

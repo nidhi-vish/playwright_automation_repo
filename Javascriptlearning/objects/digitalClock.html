@@ -1,0 +1,46 @@
+<html>
+
+<head>Digital click </head>
+    <h1 id = "dc" /h1>
+
+<body>
+
+</body>
+
+<script>
+
+    function showtime()
+    {
+        let d=new Date();
+        let h=d.getHours();
+        let m=d.getMinutes();
+        let s=d.getSeconds();
+
+        let session="AM";
+        
+        if(h>12)
+        h=h-12;
+        session="PM"
+
+        if(h<10)
+        h="0"+h;          // Alternate we can use ternary operator h=(h<10)?"0"+h : h ; 
+
+        if(h==0)
+        h=12;
+
+        m=(m<10) ? "0"+m : m ;
+
+        s=(s<10) ? "0"+s : s ;
+
+        time = h+":"+m+":"+s;
+
+        document.getElementById("dc").innerHTML = time + " " + session;
+        setTimeout(showtime,1000);
+    }
+
+    showtime();
+
+    
+</script>
+
+</html>

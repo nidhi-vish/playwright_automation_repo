@@ -1,0 +1,28 @@
+<html>
+
+<head>Calculator</head>
+
+<body>
+<input id="val1"/>
+<input id="val2"/>
+<button id="btn">Add</button>
+<p id="res"> result</p>
+</body>
+
+<script>
+document.getElementById('btn').onclick =addnumbers; 
+function addnumbers()
+    {
+        let a=document.getElementById('val1').value;                 // captures the value of  first textbox in text formate
+        let b=document.getElementById('val2').value                  // captures the value of second textbox in text formate
+        let result = parseInt(a)+parseInt(b);                  // add the values
+        document.getElementById('res').innerHTML=result;      // display the results
+
+    }
+
+
+
+
+</script>
+
+</html>
